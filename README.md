@@ -41,8 +41,8 @@ git clone https://github.com/iyop666/ngedoc.git
 cd ngedoc
 npm install
 
-# Set OpenAI API key
-echo "OPENAI_API_KEY=sk-your-key" > .env.local
+# Set API key (Gemini = free, recommended)
+echo "GEMINI_API_KEY=your_key_here" > .env.local
 
 npm run dev
 ```
@@ -64,7 +64,10 @@ npx vercel --prod
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `OPENAI_API_KEY` | Yes | OpenAI API key (GPT-4o-mini) |
+| `GEMINI_API_KEY` | Yes* | Google Gemini API key (free, [get here](https://aistudio.google.com/apikey)) |
+| `OPENAI_API_KEY` | Optional | OpenAI API key (if you have one) |
+
+*Set at least one API key. Gemini is free and recommended.
 
 ## Kenapa NgeDoc?
 
